@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The prac-portfolio </title>
+    <link rel="stylesheet" href="allcss/prac-portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #252424;
+    }
+    .sidebar nav li a{
+        color: #fff;
+    }
+    #contact {
+        margin: 10px 60px;
+        width: 95%;
+    }
+
+    .contact-left {
+        margin-left: 6px;
+        flex-basis: 35%;
+        color: #fff;
+        font-weight: 400;
+
+    }
+
+    .contact-right form {
+        margin: 80px 240px 0 239px;
+        float: right;
+        transition: transform 0.5s;
+    }
+    
+    
+    .contact-left p:hover {
+        color: teal;
+        transform: translateY(-2px);
+    }
+    .contact-left p i:hover {
+        color: teal;
+        transform: translateY(-2px);
+    }
+
+    .btn .btn2 {
+        display: inline-block;
+        background: teal;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: teal;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+        transition: form input 0.5s;
+    }
+
+    form input:hover {
+        background-color: white;
+        color: #000;
+    }
+    
+    form textarea:hover {
+        background-color: white;
+        color: #000;
+    }
+
+    form .btn2 {
+        background: teal;
+        color: #fff;
+        padding: 12px 14px;
+        font-size: 15px;
+        margin-top: 12px;
+        cursor: pointer;
+        border:1px solid transparent;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Rachit -->
+            <nav>
+                <!-- <div class="icon"><i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-close"></i>
+                </div> -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <!-- <li><a href="/Skills.html">Skills</a></li> -->
+                    <li><a href="/contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="bars" src="material/bars.png" width="23">
+                <img class="close" src="material/close.png" width="23">
+            </div>
+        <div id="contact">
+            <div class="Container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i>rachitm2022@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>8320217998</p>
+                        <!-- <div class="social-icons">
+                        </div> -->
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="copyright">
+                <p>copyright @ Rachit. </p>
+            </div> -->
+        </div>
+
+</body>
+ <script src="JavaScript/prac-portfolio.js"></script>
+</html>

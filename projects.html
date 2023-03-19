@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The prac-portfolio </title>
+    <link rel="stylesheet" href="allcss/prac-portfolio.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        color:#fff;
+    }
+    body{
+        background-color:#252424;
+    }
+    .sidebar nav li a{
+        color:#fff;
+    }
+  #portfolio{
+    padding: 5px 0px;
+  }
+  .sub-title h1{
+    font-size: 100px;
+    margin-top:2px;
+  }
+  .Container{
+    display: flex;
+    margin: 52px 10px 40px 12px;
+  }
+  .work-list{
+    display: inline-flex;
+    grid-gap: 40px;
+    margin: 150px 150px 0 150px;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin:50px; */
+  }
+  .work{
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+  }
+  .work img{
+    width:96%;
+    margin: 0;
+    border-radius:10px;
+    /* display:flex; */
+    transition: transform 0.5s;
+  }
+  .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0),teal);
+    border-radius: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+  .layer h3{
+    font-size:large;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .layer p{
+    font-size:medium;
+    font-weight: 500;
+  }
+  .layer a{
+    margin-top: -39px;
+    color: teal;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 60px;
+    /* background: #fff; */
+    width: 200px;
+    height: 60px;
+    /* border-radius: 49%; */
+    text-align: center;
+  }
+  .work:hover img{
+   transform:scale(1.1);
+  }
+  .work:hover .layer{
+    height:100%;
+  }
+  .btn{
+    display:block;
+    margin: 30px 444px;
+    width:fit-content;
+    border:1px solid teal;
+    padding:14px 50px;
+    border-radius:6px;
+   
+    color:#fff;
+    transition:background 0.5s;
+  }
+  .btn a{
+    text-decoration:none;
+    font-weight: 600;
+  }
+  .btn:hover{
+    background:teal;
+  }
+</style>
+<body>
+    <div class="container">
+    <div class="sidebar">
+        <!-- Rachit -->
+        <nav>
+            <!-- <div class="icon"><i class="fa-solid fa-bars"></i></div>            
+            <div class="close"><i class="fa-solid fa-close"></i></div>             -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <!-- <li><a href="/Skills.html">Skills</a></li> -->
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+          <img class="bars" src="material/bars.png" width="23">
+          <img class="close" src="material/close.png" width="23">
+      </div>
+     <div id="portfolio">
+         <div class="Container">
+            <h1 class="sub-title">My projects</h1>
+        </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="material/2.jpg" alt="Music-player img">
+                    <div class="layer">
+                        <h3>Music-webpage</h3>
+                        <p>The web-page is a basic music-player <br> made by  using<br>  HTML,CSS and JavaScript.</p>
+                        <a href="material/Music_player.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                </div>
+                
+                <div class="work">
+                    <img src="material/3.jpg" alt="player img">
+                    <div class="layer">
+                        <h3>weather-app</h3>
+                        <p>The weather app<br> made by  using <br> HTML,CSS and JavaScript and weather API.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="material/5.jpg" alt="img">
+                    <div class="layer">
+                        <h3>Sticky-notes</h3>
+                        <p>The web-page is a basic music-player<br>made by using<br>  HTML,CSS and JavaScript.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                   </div>
+                </div>
+            </div>
+         <div class="btn"><a href="#">See more</a></div>
+     </div>
+
+</div>
+</body>
+ <script src="JavaScript/prac-portfolio.js"></script>
+</html>
